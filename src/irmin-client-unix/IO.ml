@@ -18,7 +18,10 @@ let write_char = Lwt_io.write_char
 let read_char = Lwt_io.read_char
 
 let connect ~ctx (client : Irmin_client.addr) =
-  Conduit_lwt_unix.connect ~ctx (client :> Conduit_lwt_unix.client)
+  match client with
+  | `Ws _ -> failwith "Unsupported Protocol"
+  | `TLS _ | `TCP _
+  | `Unix_domain_socket _ as client -> Conduit_lwt_unix.connect ~ctx (client :> Conduit_lwt_unix.client)
 
 let close (c : ic * oc) = Conduit_lwt_server.close c
 let with_timeout = Lwt_unix.with_timeout
