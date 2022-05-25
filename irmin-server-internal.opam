@@ -20,6 +20,9 @@ depends: [
   "lwt" {>= "5.4.0"}
   "ppx_irmin" {>= "3.1"}
 ]
+pin-depends: [ 
+  ["graphql.dev" "git+https://github.com/andreas/ocaml-graphql-server#520ccd4013943ee0b2557aa66367b83aaa67084c"]
+]
 build: [
   ["dune" "subst"] {pinned}
   ["dune" "build" "-p" name "-j" jobs]
