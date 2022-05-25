@@ -10,7 +10,7 @@ depends: [
   "ocaml" {>= "4.08.0"}
   "dune" {>= "2.0.0"}
   "irmin-server" {= version}
-  "irmin-unix" {>= "3.1"}
+  "irmin-unix" {>= "3.2.1"}
 ]
 pin-depends: [ 
   ["graphql.dev" "git+https://github.com/andreas/ocaml-graphql-server#520ccd4013943ee0b2557aa66367b83aaa67084c"]
