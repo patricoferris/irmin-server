@@ -10,7 +10,7 @@ depends: [
   "ocaml" {>= "4.08.0"}
   "dune" {>= "2.0.0"}
   "irmin-client" {= version}
-  "irmin-unix" {>= "3.2.1"}
+  "irmin-unix" {>= "3.1"}
 ]
 build: [
   ["dune" "subst"] {pinned}

@@ -10,7 +10,7 @@ depends: [
   "ocaml" {>= "4.08.0"}
   "dune" {>= "2.0.0"}
   "optint" {>= "0.1.0"}
-  "irmin" {>= "3.2.1"}
+  "irmin" {>= "3.1"}
   "uri"
   "fmt"
   "checkseum" {>= "0.3.0"}
@@ -18,11 +18,11 @@ depends: [
   "digestif" {>= "0.9.0"}
   "logs" {>= "0.7.0"}
   "lwt" {>= "5.4.0"}
-  "ppx_irmin" {>= "3.2.1"}
+  "ppx_irmin" {>= "3.1"}
 ]
 pin-depends: [ 
   ["graphql.dev" "git+https://github.com/andreas/ocaml-graphql-server#520ccd4013943ee0b2557aa66367b83aaa67084c"]
-  ["irmin-git.3.2.1.dev" "git+https://github.com/patricoferris/irmin#83f5a5401bb3273a84959e5e427e6af884c00a6a"]
+  ["irmin.3.2.1.dev" "git+https://github.com/patricoferris/irmin#83f5a5401bb3273a84959e5e427e6af884c00a6a"]
 ]
 build: [
   ["dune" "subst"] {pinned}
