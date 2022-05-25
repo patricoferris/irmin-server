@@ -13,7 +13,8 @@ depends: [
   "irmin-unix" {>= "3.1"}
 ]
 pin-depends: [
-  ["irmin-unix.dev" "git+https://github.com/patricoferris/irmin#83f5a5401bb3273a84959e5e427e6af884c00a6a"]
+  ["irmin-graphql.3.2.1" "git+https://github.com/patricoferris/irmin#83f5a5401bb3273a84959e5e427e6af884c00a6a"]
+  ["irmin-unix.3.2.1" "git+https://github.com/patricoferris/irmin#83f5a5401bb3273a84959e5e427e6af884c00a6a"]
 ]
 build: [
   ["dune" "subst"] {pinned}
